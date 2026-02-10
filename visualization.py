@@ -88,6 +88,14 @@ class SimulationVisualizer:
         ani = FuncAnimation(self.fig, self.update, frames=None, interval=interval, blit=True, cache_frame_data=False)
         plt.show()
 
+    def save_animation(self, filename: str, frames: int = 200, interval: int = 50):
+        """Saves the animation to a file (e.g., .gif or .mp4)."""
+        print(f"Generating animation ({frames} frames)...")
+        ani = FuncAnimation(self.fig, self.update, frames=frames, interval=interval, blit=True, cache_frame_data=False)
+        # Using pillow writer for GIF
+        ani.save(filename, writer='pillow', fps=1000//interval)
+        print(f"Animation saved to {filename}")
+
 def visualize_grid(grid: np.ndarray):
     """Static visualization (kept for compatibility)."""
     colors = ['#808080', '#D2B48C', '#8B4513']

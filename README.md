@@ -1,5 +1,7 @@
 # Abeta Plaque Clearance Agent-Based Model
 
+![Simulation Demo](docs/simulation_demo.gif)
+
 This project is an agent-based model (ABM) designed to simulate the clearance of Amyloid Beta (Abeta) plaques by Microglia and monoclonal Antibodies (mAbs).
 
 ## Features
