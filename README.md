@@ -1,8 +1,11 @@
 # Abeta Plaque Clearance Agent-Based Model
 
+> **Note**: This project was created quickly with Google Gemini as a proof of concept / personal project while waiting for an optimization to converge.
+
 ![Simulation Demo](docs/simulation_demo.gif)
 
-This project is an agent-based model (ABM) designed to simulate the clearance of Amyloid Beta (Abeta) plaques by Microglia and monoclonal Antibodies (mAbs).
+This project is an agent-based model (ABM) designed to simulate the clearance of Amyloid Beta (Abeta) plaques by Microglia and monoclonal Antibodies (mAbs). I am personally interested in Microglia, mAb, and Plaque dynamics—specifically the idea that a minimal density of IgG1 is required to trigger complement for the activation of microglia—and this project seeks to explore that concept.
+
 
 ## Features
 - **Environment**: A grid-based space with two types of plaques:
