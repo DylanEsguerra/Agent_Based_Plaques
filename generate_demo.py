@@ -18,22 +18,19 @@ def generate_demo():
     env.add_dense_plaque(center_x=50, center_y=50, radius=12)
     
     # Add agents
-    env.add_mabs(count=150)
-    env.add_microglia(count=15)
+    env.add_mabs(count=200)
+    env.add_microglia(count=20)
     
     os.makedirs("docs", exist_ok=True)
     output_path = "docs/simulation_demo.gif"
     
-    print("Pre-simulating 200 steps to reach active state...")
-    for _ in range(200):
-        env.step()
     
     print("Starting head-less simulation and recording...")
     # Hide the plot window for head-less generation
     plt.ioff()
     
     visualizer = SimulationVisualizer(env)
-    # Save a short demo starting from step 200
+    # Save a short demo starting from step 0
     visualizer.save_animation(output_path, frames=150, interval=50)
     
     print(f"Demo generated at {output_path}")

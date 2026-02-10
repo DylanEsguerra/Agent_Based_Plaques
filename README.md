@@ -37,3 +37,9 @@ Run the interactive simulation:
 ```bash
 python main.py
 ```
+
+To regenerate the demo GIF:
+```bash
+python generate_demo.py
+```
+*Note: The demo at the top shows a simulation starting from step 0 with 200 mAbs and 20 Microglia.*
